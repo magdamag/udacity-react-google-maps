@@ -17,4 +17,5 @@ Each marker highlights on click and fetches information from Foursquare.
 ## Acknowledgments
 
 Project uses Foursquare API for fetching ratings and photos of chosen places.
-udacity-react-google-maps was forked and inspired by original Udacity React course!
+
+# udacity-react-google-maps was forked and inspired by original Udacity React course!
