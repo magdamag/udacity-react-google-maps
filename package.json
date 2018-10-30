@@ -5,6 +5,7 @@
   "dependencies": {
     "google-maps-react": "^2.0.2",
     "react": "^16.5.2",
+    "react-addons-update": "^15.6.2",
     "react-dom": "^16.5.2",
     "react-foursquare": "^1.0.3",
     "react-scripts": "2.0.4",

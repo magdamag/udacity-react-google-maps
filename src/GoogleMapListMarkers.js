@@ -1,26 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import sortBy from 'sort-by';
 
-const GoogleMapmarkers = ({markers}) => {
+const GoogleMapmarkers = ({markers, onMarkerClick}) => {
   return(
-    <div className="markersMainContainer">
-      <h2 className="markersTitle">Visible markers</h2>
-      <div className="markersContainer">
-        <ol className="markers">
-        {markers.sort(sortBy('name')).map((marker, index) => (
-          <li key={index}>
-            {marker.name}
-          </li>
-        ))}
-        </ol>
-      </div>
-    </div>
+    <ol className="markers">
+    {markers.map(marker => (
+      <li onClick={e => onMarkerClick(marker.props)} key={marker.key}>
+        {marker.props.name}
+      </li>
+    ))}
+    </ol>
   )
 }
 
 GoogleMapmarkers.propTypes = {
-    markers: PropTypes.array.isRequired,
+  markers: PropTypes.array.isRequired,
+  onMarkerClick: PropTypes.func.isRequired
 };
 
 export default GoogleMapmarkers
