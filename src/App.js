@@ -34,7 +34,7 @@ class GoogleMapApp extends Component {
 
   render() {
     return (
-      <div className="app">
+      <div role="application" className="app">
         <GoogleMap places={this.state.places} filterPlaces={this.filterPlaces}/>
       </div>
     )

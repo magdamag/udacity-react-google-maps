@@ -57,7 +57,7 @@ class MapContainer extends Component {
       }
     })
     .catch(reason => {
-      console.log(reason)
+      alert('Foursquare request failed!')
     });
   };
 

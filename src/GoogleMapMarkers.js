@@ -23,6 +23,7 @@ class GoogleMapMarkers extends Component {
         <form>
           <input
             placeholder="Search for place..."
+            tabIndex="1"
             ref={input => this.search = input}
             onChange={this.onInputChange}
           />
