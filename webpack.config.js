@@ -18,7 +18,7 @@ plugins: [
   new GenerateSW({
     runtimeCaching: [
       {
-          urlPattern: new RegExp('^https://maps.googleapis.com/(.*)'),
+		  urlPattern: new RegExp('^https://maps.(?:googleapis|gstatic).com/(.*)'),
           handler: 'cacheFirst'
       },
       {
