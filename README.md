@@ -6,7 +6,7 @@ The project uses a fixed set locations.
 
 ## Installation
 * Get NPM from https://www.npmjs.com/get-npm or Yarn from https://yarnpkg.com/lang/en/docs/install
-* Get project dependencies: `npm install prop-types react react-dom google-maps-react`
+* Get project dependencies: `npm install prop-types react react-dom google-maps-react @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-proposal-class-properties webpack-cli`
 * In the project folder run: `npm start` or `yarn start`
 
 ## Usage
