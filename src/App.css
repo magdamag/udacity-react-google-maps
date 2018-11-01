@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+}
+
+.map {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5rem;
+}
+
+.markersTitle {
+  font-size: 1.8rem;
+}
+
+input {
+  height: 1.2rem;
+  size: 25;
+  width: 80%;
+}
+
+input::placeholder {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .map {
+    flex-direction: column;
+  }
+}

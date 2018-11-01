@@ -86,10 +86,9 @@ class MapContainer extends Component {
     const {google, places, filterPlaces} = this.props
     const {activePosition, showingInfoWindow, selectedPositionName, foursquare} = this.state
     const style = {
-      width: '80%',
       height: '100%',
       position: 'relative',
-      float: 'right'
+      width: '80%'
     }
     const defaultIcon = {
       url: 'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|0091ff|40|_|%E2%80%A2',
